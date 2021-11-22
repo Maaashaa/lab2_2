@@ -11,7 +11,7 @@ public class Lab2_2 {
                     i++;
                 }
             } else {
-                System.out.println("Число должно быть больше или равно 0, но меньше 15.Попробуйте снова.\nВведите число: ");
+                System.out.println("Число должно быть больше или равно 0, но меньше 15.");
             }
             return res;
         }
@@ -21,8 +21,9 @@ public class Lab2_2 {
             while(!in.hasNext("close")){
                 if(in.hasNextInt()){
                     System.out.println("Факториал: " + Factorial(in.nextInt()));
+                    System.out.println("Если хотите завершить, введите close, иначе введите число: ");
                 } else {
-                    System.out.println("Ошибка!Нужно целое число.Поробуйте ешё раз.\nВведите число: ");
+                    System.out.println("Ошибка!Нужно целое число.\nЕсли хотите завершить, введите close, иначе попробуйте снова ввести число: ");
                     in.next();
                 }
             }
